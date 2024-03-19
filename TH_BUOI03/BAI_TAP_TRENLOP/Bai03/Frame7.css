@@ -1,0 +1,24 @@
+.item1 { grid-area: A; }
+.item2 { grid-area: B; }
+.item3 { grid-area: C; }
+.item4 { grid-area: D; height: 50px; }
+.item5 { grid-area: E; height: 200px; }
+
+.grid-container {
+  display: grid; border: 1em solid #2196F3; width: 50%;
+  grid-template-areas:
+    'A A A'
+    'B B C'
+    'B B E'
+    'D D E';
+  gap: 10px;
+  background-color: green;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px ;
+  font-size: 30px;
+}

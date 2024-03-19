@@ -1,0 +1,44 @@
+.container {
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 700px;
+    margin: 20px auto;
+    background-color: #ffc;
+}
+
+h1 {
+    text-align: center;
+    color: #900;
+}
+
+p {
+
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 30px;
+}
+
+.container2 {
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 450px;
+    height: 330px;
+    margin: 20px auto;
+    background-image: url(/BAI_TAP_MAU/Bai03/img/image.png);
+
+    p {
+        text-indent: 25px;
+        padding: 20px;
+        text-align: justify;
+        font-size: 20px;
+        line-height: 30px;
+        color: #ffc;
+    }
+}
+
+h2 {
+    text-align: center;
+    color: #cf0;
+}

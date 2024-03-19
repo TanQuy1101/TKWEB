@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai01</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="400" height="220"
+        style="border: 1px solid blue; border-radius: 10px; background-color: aquamarine;"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        ctx.lineWidth = "8";  // Độ Dày Của Line
+        ctx.strokeStyle = "blue"; // Màu Viền
+
+        // Vẽ Hình Tròn
+        ctx.beginPath();
+        ctx.arc(200, 100, 70, 0, 2 * Math.PI);
+        ctx.stroke();
+
+        // Vẽ Cung Thứ Nhất, Phía Trên, Bên Trái
+        ctx.beginPath();
+        ctx.arc(200, 100, 90, Math.PI, 1.3 * Math.PI);
+        ctx.stroke();
+
+        // Vẽ Cung Thứ Hai, Phía Trên, Bên Trái
+        ctx.beginPath();
+        ctx.arc(200, 100, 110, Math.PI, 1.3 * Math.PI);
+        ctx.stroke();
+
+        // Vẽ Cung Thứ Nhất, Phía Trên, Bên Phải
+        ctx.strokeStyle = "grey";
+        ctx.beginPath();
+        ctx.arc(200, 100, 90, 1.7 * Math.PI, 2 * Math.PI);
+        ctx.stroke();
+
+        // Vẽ Cung Thứ Hai, Phía Trên, Bên Phải
+        ctx.strokeStyle = "grey";
+        ctx.beginPath();
+        ctx.arc(200, 100, 110, 1.7 * Math.PI, 2 * Math.PI);
+        ctx.stroke();
+
+        // Vẽ Cung Thứ Ba, Phía Trên, Bên Phải
+        ctx.strokeStyle = "grey";
+        ctx.beginPath();
+        ctx.arc(200, 100, 130, 1.7 * Math.PI, 2 * Math.PI);
+        ctx.stroke();
+
+        // Vẽ Cung Thứ Tư, Phía Trên, Bên Phải
+        ctx.strokeStyle = "grey";
+        ctx.beginPath();
+        ctx.arc(200, 100, 150, 1.7 * Math.PI, 2 * Math.PI);
+        ctx.stroke();
+
+        // Vẽ Cung Thứ Năm, Phía Trên, Bên Phải
+        ctx.strokeStyle = "grey";
+        ctx.beginPath();
+        ctx.arc(200, 100, 170, 1.7 * Math.PI, 2 * Math.PI);
+        ctx.stroke();
+
+        // Vẽ Đường Thẳng Trong Hình Tròn
+        ctx.beginPath();
+        ctx.strokeStyle = "blue";
+        ctx.moveTo(200, 30);
+        ctx.lineTo(200, 170);
+        ctx.stroke();
+
+        // Vẽ Đường Thẳng Thứ Nhất Trong Hình Tròn
+        ctx.strokeStyle = "blue";
+        ctx.moveTo(150, 50);
+        ctx.lineTo(250, 50);
+        ctx.stroke();
+
+        // Vẽ Đường Thẳng Thứ Hai Trong Hình Tròn
+        ctx.moveTo(140, 70);
+        ctx.lineTo(260, 70);
+        ctx.stroke();
+
+        // Vẽ Đường Thẳng Thứ Ba Trong Hình Tròn
+        ctx.moveTo(130, 90);
+        ctx.lineTo(270, 90);
+        ctx.stroke();
+
+        // Vẽ Đường Thẳng Thứ Tư Trong Hình Tròn
+        ctx.moveTo(128, 110);
+        ctx.lineTo(271, 110);
+        ctx.stroke();
+
+        // Vẽ Đường Thẳng Thứ Năm Trong Hình Tròn
+        ctx.moveTo(135, 125);
+        ctx.lineTo(268, 126);
+        ctx.stroke();
+
+        // Vẽ Đường Thẳng Thứ Sáu Trong Hình Tròn
+        ctx.moveTo(145, 145);
+        ctx.lineTo(256, 145);
+        ctx.stroke();
+
+        // Ghi Nội Dung + style
+        ctx.fillStyle = "black";
+        ctx.font = "25px Arial";
+        ctx.fillText("GLOBAL 2021",125,205);
+
+    </script>
+</body>
+
+</html>

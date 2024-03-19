@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    background-color: antiquewhite;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    gap: 20px;
+}
+
+.grid-item {
+    border: 2px solid black;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: x-large;
+    height: fit-content;
+}
+
+img {
+    height: 180px;
+    width: 450px;
+}

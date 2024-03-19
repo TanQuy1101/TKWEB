@@ -1,0 +1,35 @@
+.change1 {
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+}
+
+.change2 {
+    color: blue;
+    font-size: larger;
+    text-align: left;
+    display: flex;
+}
+
+.change3 {
+    padding-left: 8em;
+}
+
+.change4 {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+}
+
+.change5 {
+   margin: 0 auto; 
+   display: block; 
+   width: 140px; 
+   height: 40px;
+}
+
+.change6 {
+    color: red;
+    text-align: center;
+    font-size: large;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .content {
+            background-color: red;
+            padding-left: 1em;
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid black;
+            width: 520px;
+            margin: auto;
+        }
+    </style>
+
+    <style>
+        .contentinside {
+            background-color: white;
+            padding-right: 3em;
+            font-family: 'Times New Roman', Times, serif;
+            border: 1px solid black;
+            font-size: large;
+            width: 450px;
+        }
+    </style>
+
+    <style>
+        .search>i {
+            background-color: red;
+            color: white;
+            display: inline-flex;
+            height: 20px;
+            padding-top: 2px;
+        }
+    </style>
+
+    <style>
+        .step1 {
+            display: flex;
+            margin-top: -15px;
+
+            #find {
+                border: 1px solid red;
+                margin-left: 1em;
+                color: gray;
+            }
+
+            .bars {
+                border: 1px solid black;
+                background-color: gray;
+                color: white;
+            }
+
+            .bars>i {
+                color: white;
+            }
+        }
+    </style>
+
+    <style>
+        .step2 {
+            h3 {
+                color: red;
+                font-size: larger;
+                margin-top: auto;
+            }
+        }
+
+        .pay {
+            border: 1px solid green;
+            background-color: green;
+            color: white;
+            display: inline-flex;
+            height: 1.2em;
+            font-size: medium;
+            padding: 0.3em;
+        }
+
+        .buy-now {
+            border: 1px solid red;
+            background-color: red;
+            color: white;
+            display: inline-flex;
+            height: 1.2em;
+            font-size: medium;
+            padding: 0.3em;
+            margin: auto;
+        }
+
+        .with-payment {
+            #buy-paylater {
+                text-transform: uppercase;
+                border: 1px solid red;
+                background-color: white;
+                color: red;
+                display: inline-flex;
+                height: 1.2em;
+                font-size: medium;
+                padding: 0.3em;
+            }
+
+            .buy-now>h {
+                margin-left: 0.5em;
+            }
+
+            .month {
+                h {
+                    margin-right: 7em;
+                }
+
+                .buy-now {
+                    margin-left: 8em;
+                    margin-inline: 0.4em;
+                }
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="content">
+        <h1 style="color: white ; font-size: xxx-large;"> CÁC CÁCH </h1>
+        <h2 style="color: white ; font-size: xxx-large;"> MUA HÀNG ONLINE </h2>
+
+
+        <div class="contentinside">
+            <p style="color: red ; font-size: xx-large ;"> <b style="padding-left: 0.5em;">Website: nguyenkim.com</b>
+            </p>
+            <h2 style="padding-left: 0.5em;"> <b style="color: red ; font-size: xx-large ;"> Bước 1:</b> Bạn tìm sản
+                phẩm cần mua tại <b style="color: black ; font-size: xx-large;">"Danh mục sản phẩm"</b> hoặc nhập vào <b
+                    style="color: black ; font-size: xx-large;">"Khung tìm kiếm"</b></h2>
+            </p>
+
+            <div class="step1">
+                <p class=" bars">
+                    <i class="fa-solid fa-bars"></i>
+                    Danh mục sản phẩm
+                </p>
+                <p class="search">
+                    <h id="find">
+                        Bạn muốn tìm kiếm sản phẩm gì?
+                    </h>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </p>
+            </div>
+            <div class="step2">
+                <h3 style="padding-left: 0.5em; font-size: xx-large;">Bước 2</h3>
+                <b style="padding-left: 0.5em;"> Đối với
+                    <h class="buy-now">
+                        Mua ngay
+                    </h>
+                </b>
+                <ul style="margin-top: auto;">
+                    <li>
+                        Chọn <b> "Mua ngay"</b>
+                    </li>
+                    <li>Chọn số lượng sản phẩm cần mua</li>
+                    <li>Nhập mã khuyến mãi (nếu có)</li>
+                    <li>Chọn hình thức nhận hàng tại nhà hoặc trung tâm</li>
+                    <li>Nhập thông tin của bạn </li>
+                    <li>Chọn phương thức thanh toán sản phẩm mong muốn</li>
+                    <li>
+                        Chọn <h class="pay"> Thanh toán</h>
+                    </li>
+                </ul>
+            </div>
+            <div class="with-payment">
+                <b style="padding-left: 0.5em;"> Đối với
+                    <h id="buy-paylater">
+                        Mua trả góp
+                    </h>
+                </b>
+                <ul>
+                    <li>Chọn "Mua trả góp</li>
+                    <li>Chọn phương thức trả góp phù hợp:</li>
+                </ul>
+
+                <p class="buy-now">
+                    <i class="fa-solid fa-building"></i>
+                    <h style="padding-left: 0.5em;"> QUA CÔNG TY TÀI CHÍNH</h>
+                </p>
+
+                <ul>
+                    <li>
+                        <div class="time">
+                            <div class="month">
+                                <h>
+                                    Chọn số tháng trả góp
+                                </h>
+
+                                <p class="buy-now">
+                                    6 tháng
+                                </p>
+                                <p class="buy-now">
+                                    9 tháng
+                                </p>
+                                <p class="buy-now">
+                                    12 tháng
+                                </p>
+                                <p class="buy-now">
+                                    15 tháng
+                                </p>
+                                <p class="buy-now">
+                                    18 tháng
+                                </p>
+                            </div>
+                    </li>
+                    <li>Chọn số tiền muốn trả trước </li>
+                    <li>Chọn công ty tài chính phù hợp.Điền đầy đủ thông tin</li>
+                    <li>
+                        Chọn <h class="pay"> Thanh toán</h>
+                    </li>
+                </ul>
+                <p class="buy-now">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <h> QUA THẺ TÍN DỤNG</h>
+                </p>
+                <ul>
+
+                    <li>Chọn ngân hàng phát hành thẻ tin dụng</li>
+                    <li>Điền đầy đủ thông tin thẻ</li>
+                    <li>
+                        Chọn <h class="pay">Tiếp theo</h>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

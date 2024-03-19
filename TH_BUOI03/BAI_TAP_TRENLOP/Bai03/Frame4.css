@@ -1,0 +1,29 @@
+.item1 { grid-area: A; height: 70px; width: 20px; }
+.item2 { grid-area: B; height: 10px; width: 160px; }
+.item3 { grid-area: C; height: 10px; width: 160px; }
+.item4 { grid-area: D; height: 70px; }
+.item5 { grid-area: E; width: 85px;  }
+.item6 { grid-area: G; height: 70px; }
+.item7 { grid-area: F; width: 230px; }
+
+.grid-container {
+  display: grid; border: 1em solid #2196F3; width: 50%;
+  grid-template-areas:
+    'A B B'
+    'A C C'
+    'D D E'
+    'D D E'
+    'G G E'
+    'G G E'
+    'F F F';
+  gap: 10px;
+  background-color: green;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  padding: 20px ;
+  font-size: 30px;
+}

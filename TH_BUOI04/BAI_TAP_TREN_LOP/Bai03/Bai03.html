@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai03</title>
+    <link rel="stylesheet" href="Bai03.css" />
+</head>
+
+<body>
+    <div class="checkout-wrapper">
+        <form id="checkout-form" class="processed-form">
+            <div class="checkout-process">
+                <h3>Chọn địa chỉ nhận hàng</h3>
+                <div class="step-1">
+                    <div class="place-shipping-wrapper">
+                        <div class="place-shipping-item">
+                            <label for="placeAtHome" class="label-block">
+                                <input type="radio" name="delivery_type" class="custom-radio" id="placeAtHome" value="1"
+                                    checked />
+                                <div class="place-shipping-box">
+                                    <img class="place-shipping-image unchecked" width="54" height="36"
+                                        alt="icon-nk-delivery" src="/BAI_TAP_TREN_LOP/Bai03/img/pic1.jpg" />
+                                    <img class="place-shipping-image checked" width="54" height="36"
+                                        alt="icon-nk-delivery" src="/BAI_TAP_TREN_LOP/Bai03/img/pic2.jpg" />
+                                    <p class="place-shipping-title">Nhận hàng tại nhà</p>
+                                    <div class="custom-radio-2-box">
+                                        <div class="custom-radio-2"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="place-shipping-item">
+                            <label for="placeAtStore" class="label-block">
+                                <input type="radio" name="delivery_type" class="custom-radio" id="placeAtStore"
+                                    value="2" />
+                                <div class="place-shipping-box">
+                                    <img class="place-shipping-image unchecked" width="73" height="36"
+                                        src="/BAI_TAP_TREN_LOP/Bai03/img/pic3.jpg" alt="icon-nk-delivery" />
+                                    <img class="place-shipping-image checked" width="73" height="36"
+                                        src="/BAI_TAP_TREN_LOP/Bai03/img/pic4.jpg" alt="icon-nk-delivery" />
+                                    <p class="place-shipping-title">Nhận hàng tại trung tâm</p>
+                                    <div class="custom-radio-2-box">
+                                        <div class="custom-radio-2"></div>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="placeAtHomeInfo">
+                        <div class="address-shipping-wrapper" id="address-shipping-wrapper">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-wrapper__label">Họ và tên<em>(*)</em></span>
+                                    <input type="text" class="form-control" id="full_name" name="full_name" value=""
+                                        required="" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-wrapper__label">Số điện thoại <em>(*)</em></span>
+                                    <input type="text" class="form-control" id="phone_number" name="phone_number"
+                                        value="" required="" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-wrapper__label" for="email">Email</span>
+                                    <input type="email" class="form-control" id="email" name="email" value=""
+                                        autocomplete="email" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-wrapper__label">Tỉnh / Thành Phố <em>(*)</em></span>
+                                    <select class="custom-select" name="city_id" id="city_id" autocomplete="off"
+                                        required="" tabindex="-1" aria-hidden="true">
+                                        <option value="" disabled="" selected="">
+                                            Chọn tỉnh/Thành phố của bạn
+                                        </option>
+                                        <option value="001">TP.HCM</option>
+                                        <option value="027">Hà Nội</option>
+                                        <option value="002">Bình Dương</option>
+                                        <option value="031">Hải Phòng</option>
+                                        <option value="004">Đồng Nai</option>
+                                        <option value="061">Quảng Ninh</option>
+                                        <option value="012">Bà Rịa - Vũng Tàu</option>
+                                        <option value="054">Thái Nguyên</option>
+                                        <option value="040">Lâm Đồng</option>
+                                        <option value="045">Phú Thọ</option>
+                                        <option value="018">Bình Thuận</option>
+                                        <option value="041">Nam Định</option>
+                                        <option value="007">Tiền Giang</option>
+                                        <option value="055">Thanh Hóa</option>
+                                        <option value="006">Bến Tre</option>
+                                        <option value="042">Nghệ An</option>
+                                        <option value="003">Vĩnh Long</option>
+                                        <option value="056">Thừa Thiên Huế</option>
+                                        <option value="057">Trà Vinh</option>
+                                        <option value="021">Đà Nẵng</option>
+                                        <option value="010">An Giang</option>
+                                        <option value="049">Quảng Ngãi</option>
+                                        <option value="008">Cần Thơ</option>
+                                        <option value="016">Bình Định</option>
+                                        <option value="035">Kiên Giang</option>
+                                        <option value="024">Gia Lai</option>
+                                        <option value="011">Bạc Liêu</option>
+                                        <option value="022">Đắk Lắk</option>
+                                        <option value="020">Cà Mau</option>
+                                        <option value="034">Khánh Hòa</option>
+                                        <option value="014">Bắc Giang</option>
+                                        <option value="013">Bắc Kạn</option>
+                                        <option value="015">Bắc Ninh</option>
+                                        <option value="017">Bình Phước</option>
+                                        <option value="019">Cao Bằng</option>
+                                        <option value="025">Hà Giang</option>
+                                        <option value="026">Hà Nam</option>
+                                        <option value="029">Hà Tĩnh</option>
+                                        <option value="030">Hải Dương</option>
+                                        <option value="066">Hậu Giang</option>
+                                        <option value="032">Hòa Bình</option>
+                                        <option value="033">Hưng Yên</option>
+                                        <option value="036">Kon Tum</option>
+                                        <option value="037">Lai Châu</option>
+                                        <option value="038">Lạng Sơn</option>
+                                        <option value="039">Lào Cai</option>
+                                        <option value="005">Long An</option>
+                                        <option value="043">Ninh Bình</option>
+                                        <option value="044">Ninh Thuận</option>
+                                        <option value="046">Phú Yên</option>
+                                        <option value="047">Quảng Bình</option>
+                                        <option value="048">Quảng Nam</option>
+                                        <option value="009">Quảng Trị</option>
+                                        <option value="051">Sóc Trăng</option>
+                                        <option value="050">Sơn La</option>
+                                        <option value="052">Tây Ninh</option>
+                                        <option value="053">Thái Bình</option>
+                                        <option value="058">Tuyên Quang</option>
+                                        <option value="059">Vĩnh Phúc</option>
+                                        <option value="060">Yên Bái</option>
+                                        <option value="068">Đắk Nông</option>
+                                        <option value="067">Điện Biên</option>
+                                        <option value="023">Đồng Tháp</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-wrapper__label">Quận / Huyện <em>(*)</em></span>
+                                    <select class="custom-select" name="district_id" id="district_id" required=""
+                                        tabindex="-1" aria-hidden="true">
+                                        <option value="" disabled="" selected="">
+                                            Chọn Quận/Huyện
+                                        </option>
+                                        <option value="001">Quận 1</option>
+                                        <option value="002">Quận 2</option>
+                                        <option value="003">Quận 3</option>
+                                        <option value="004">Quận 4</option>
+                                        <option value="005">Quận 5</option>
+                                        <option value="006">Quận 6</option>
+                                        <option value="007">Quận 7</option>
+                                        <option value="008">Quận 8</option>
+                                        <option value="009">Quận 9</option>
+                                        <option value="010">Quận 10</option>
+                                        <option value="011">Quận 11</option>
+                                        <option value="012">Quận 12</option>
+                                        <option value="013">Phú Nhuận</option>
+                                        <option value="014">Tân Bình</option>
+                                        <option value="015">Tân Phú</option>
+                                        <option value="016">Bình Tân</option>
+                                        <option value="017">Bình Thạnh</option>
+                                        <option value="018">Gò Vấp</option>
+                                        <option value="019">Thủ Đức</option>
+                                        <option value="020">Bình Chánh</option>
+                                        <option value="021">Hóc Môn</option>
+                                        <option value="022">Củ Chi</option>
+                                        <option value="023">Cần Giờ</option>
+                                        <option value="024">Nhà Bè</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <span class="input-wrapper__label">Phường / Xã <em>(*)</em></span>
+                                    <select class="custom-select" name="ward_id" id="ward_id" required="" tabindex="-1"
+                                        aria-hidden="true">
+                                        <option value="" disabled="" selected="">
+                                            Chọn Phường / Xã
+                                        </option>
+
+                                        <option value="001" data-select2-id="117">
+                                            Phường Tân Sơn Nhì
+                                        </option>
+                                        <option value="002" data-select2-id="118">
+                                            Phường Tây Thạnh
+                                        </option>
+                                        <option value="003" data-select2-id="119">
+                                            Phường Sơn Kỳ
+                                        </option>
+                                        <option value="004" data-select2-id="120">
+                                            Phường Tân Quý
+                                        </option>
+                                        <option value="005" data-select2-id="121">
+                                            Phường Tân Thành
+                                        </option>
+                                        <option value="006" data-select2-id="122">
+                                            Phường Phú Thọ Hòa
+                                        </option>
+                                        <option value="007" data-select2-id="123">
+                                            Phường Phú Thạnh
+                                        </option>
+                                        <option value="008" data-select2-id="124">
+                                            Phường Phú Trung
+                                        </option>
+                                        <option value="009" data-select2-id="125">
+                                            Phường Hòa Thạnh
+                                        </option>
+                                        <option value="010" data-select2-id="126">
+                                            Phường Hiệp Tân
+                                        </option>
+                                        <option value="011" data-select2-id="127">
+                                            Phường Tân Thới Hòa
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group street">
+                                <div class="input-wrapper">
+                                    <span class="input-wrapper__label">Số nhà / Tên đường <em>(*)</em></span>
+                                    <input type="text" class="form-control" id="street" name="street" value=""
+                                        required="" />
+                                </div>
+                            </div>
+                        </div>
+                        <label for="register_account" class="label-block" style="margin: 5px 0 0">
+                            <input type="checkbox" class="custom-checkbox" value="N" id="register_account"
+                                name="register_account" checked="checked" />
+                            <div class="export-billing-box" style="border: 0; padding: 0; font-size: 15px">
+                                <div class="custom-checkbox-wrapper">
+                                    <div class="custom-checkbox-box"></div>
+                                </div>
+                                <div>
+                                    Sử dụng thông tin này để đăng ký tài khoản mua hàng !
+                                </div>
+                            </div>
+                        </label>
+                        <div class="delivery-date-time-section">
+                            <div class="input-wrapper">
+                                <span class="input-wrapper__label">Để lại lời nhắn cho Nguyễn Kim</span>
+                                <textarea name="note" aria-label="delivery note" rows="3"
+                                    style="width: 100%"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3>Chọn hình thức thanh toán</h3>
+                <div class="step-2">
+                    <div class="payment-method-wrapper">
+                        <label for="paymentCOD" class="label-block flex-1-3">
+                            <input type="radio" name="payment_type" class="custom-radio" id="paymentCOD" value="cod"
+                                checked="" />
+                            <div class="payment-method-box">
+                                <div class="payment-method-icon">
+                                    <img width="27" height="27" alt="payment-method-COD"
+                                        src="/BAI_TAP_TREN_LOP/Bai03/img/pic5.jpg" />
+                                </div>
+                                <div class="payment-method-description">
+                                    <p class="main-content">Thanh toán khi nhận hàng</p>
+                                </div>
+                                <div class="custom-radio-2-box">
+                                    <div class="custom-radio-2"></div>
+                                </div>
+                            </div>
+                        </label>
+                        <label for="paymentInternetBanking" class="label-block payment-block flex-1-3">
+                            <input type="radio" name="payment_type" class="custom-radio" value="internetBanking"
+                                id="paymentInternetBanking" />
+                            <div class="payment-method-box">
+                                <div class="payment-method-icon">
+                                    <img width="27" height="23" alt="payment-method-atm"
+                                        src="./img/icon-payment-atm.svg" />
+                                </div>
+                                <div class="payment-method-description">
+                                    <p class="main-content">Thẻ ATM/Internet banking</p>
+                                </div>
+                                <div class="custom-radio-2-box">
+                                    <div class="custom-radio-2"></div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label for="paymentCredit" class="label-block payment-block flex-1-3">
+                            <input type="radio" name="payment_type" class="custom-radio" value="creditCard"
+                                id="paymentCredit" />
+                            <div class="payment-method-box">
+                                <div class="payment-method-icon">
+                                    <img width="27" height="20" alt="payment-method-credit"
+                                        src="/BAI_TAP_TREN_LOP/Bai03/img/pic6.jpg" />
+                                </div>
+                                <div class="payment-method-description">
+                                    <p class="main-content">Thẻ tín dụng</p>
+                                </div>
+                                <div class="custom-radio-2-box">
+                                    <div class="custom-radio-2"></div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="step-3">
+                    <label for="installService" class="label-block mb-3">
+                        <input type="checkbox" class="custom-checkbox" id="installService" name="installService" />
+                        <div class="export-billing-box">
+                            <div class="custom-checkbox-wrapper">
+                                <div class="custom-checkbox-box"></div>
+                            </div>
+                            <div>Bạn muốn sử dụng dịch vụ lắp đặt</div>
+                        </div>
+                    </label>
+                    <label for="confirmPolicy" class="label-block mb-3">
+                        <input type="checkbox" class="custom-checkbox" id="confirmPolicy" name="confirmPolicy"
+                            checked="" />
+                        <div class="export-billing-box confirm-policy-box">
+                            <div class="custom-checkbox-wrapper">
+                                <div class="custom-checkbox-box"></div>
+                            </div>
+                            <div>
+                                Tôi đồng ý
+                                <a href="https://www.nguyenkim.com/dam-bao-an-toan-giao-dich-khi-mua-sam-tai-nguyen-kim.html"
+                                    target="_blank" class="policy-link">thoả thuận bảo mật và chính sách mua hàng</a>
+                            </div>
+                        </div>
+                    </label>
+                    <label for="exportBilling" class="label-block">
+                        <input type="checkbox" class="custom-checkbox" id="exportBilling" name="exportBilling" />
+                        <div class="export-billing-box">
+                            <div class="custom-checkbox-wrapper">
+                                <div class="custom-checkbox-box"></div>
+                            </div>
+                            <div>Yêu cầu xuất hoá đơn GTGT cho đơn hàng này</div>
+                        </div>
+                    </label>
+                </div>
+                <div class="checkout-box">
+                    <button type="submit" class="checkout-cta">
+                        Thanh toán
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

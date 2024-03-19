@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai07</title>
+</head>
+
+<body>
+    <div style="border: 2px solid red; height: 168px;">
+        <canvas id="myCanvas" width="200" height="100" ></canvas>
+        <canvas id="myCanvas2" width="200" height="100"></canvas>
+    </div>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Create gradient 1
+        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "yellow");
+        // Fill with gradient 1
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,180,40);
+
+        var a = document.getElementById("myCanvas2");
+        var ctx = a.getContext("2d");
+
+        // Create gradient 2
+        var grd = ctx.createLinearGradient(0, 0, 200, 0);
+        grd.addColorStop(0, "red");
+        grd.addColorStop(1, "yellow");
+        // Fill with gradient 2
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,180,40);
+    </script>
+</body>
+
+</html>

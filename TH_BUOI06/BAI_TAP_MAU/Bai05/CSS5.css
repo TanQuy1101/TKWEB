@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 3px solid blue;
+    width: 900px;
+    margin: auto;
+}
+
+.fruit {
+    border: 3px solid grey;
+    width: 46%;
+    float: left;
+    margin: 12px 6px;
+    padding: 12px 6px;
+    background-color: pink;
+}
+
+.computer {
+    border: 3px solid grey;
+    width: 46%;
+    float: right;
+    margin: 12px 6px;
+    padding: 12px 6px;
+    background-color: pink;
+}
+
+.stationary {
+    border: 3px solid grey;
+    width: 97%;
+    clear: both;
+    margin: 12px 6px;
+    padding: 12px 6px;
+    background-color: pink;
+}
+
+p {
+    text-align: justify;
+}

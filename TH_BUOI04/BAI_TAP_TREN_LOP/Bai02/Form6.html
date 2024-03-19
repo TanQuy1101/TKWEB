@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai02</title>
+    <link rel="stylesheet" href="Form6.css">
+</head>
+
+<body>
+    <table style="border: 2px solid black; width: 80%; margin: 0 auto; background-image: url(img/pic1.jpg);">
+        <tr>
+            <th class="change1">Thông Tin Khách Hàng</th>
+        </tr>
+
+        <tr>
+            <td class="change2">Tên Khách Hàng:&nbsp; &nbsp; &nbsp; &nbsp; <input type="text" class="change3"></td>
+        </tr>
+
+        <tr>
+            <td class="change2">Tình Trạng: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+                <select name="new customer" id="new customer">
+                    <option value="NEW customer">Khách Hàng Mới</option>
+                    <option value="VIP customer">Khách Hàng VIP</option>
+                    <option value="MEMBER customer">Khách Hàng Thành Viên</option>
+                </select>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Mã
+                KH: <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="change2">Chọn Khu:
+                <input type="radio" name="khu" id="hotel" value="hotel">
+                <label for="khách sạn" class="change4">Khách Sạn</label>
+                <input type="radio" name="khu" id="karaoke" value="karaoke">
+                <label for="karaoke" class="change4">Karaoke</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="change2">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Số Phòng: <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <input type="radio" name="choose" id="bar" value="bar">
+                <label for="bar" class="change4">Bar Club</label>
+                <input type="radio" name="coffee" id="coffee" value="coffee">
+                <label for="coffee" class="change4">Coffee</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="change2">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Số Bàn: <input type="text">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="change2">
+                <label for="text" style=" line-height: 6.6;">Yêu Cầu: </label>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                <textarea name="text" id="text" cols="40" rows="10"></textarea>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <button class="change5">Gửi Thông Tin</button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <p class="change6">Quý khách vui lòng điền thông tin đầy đủ trước khi đặt món ăn.!!!</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai01</title>
+</head>
+
+<body>
+    <form style="border: 2px solid black; border-radius: 5px; margin: auto; width: 50%;">
+        <table style="margin: auto; width: 100%;">
+            <tr style="background-color: grey;">
+                <td colspan="2">
+                    <h2 style="padding-left: 0.6em;">THÔNG TIN NGƯỜI GỬI</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>* Người gửi</td>
+                <td> <input type="text" name="sender" id="sender" placeholder="Nhập họ và tên" required></td>
+            </tr>
+            <tr>
+                <td>* E-Mail</td>
+                <td><input type="email" name="email" id="email" placeholder="Nhập Email" required></td>
+            </tr>
+            <tr>
+                <td>* Điện thoại</td>
+                <td><input type="tel" name="telephonenumber" id="telephonenumber" placeholder="Nhập phone" required>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <form style="border: 2px solid black; border-radius: 5px; margin: auto; width: 50%;">
+        <table style="margin: auto 0; width: 100%;">
+            <tr style="background-color: grey;">
+                <td colspan="2">
+                    <h2 style="padding-left: 0.6em;">THÔNG TIN NGƯỜI NHẬN</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>* Người nhận</td>
+                <td> <input type="text" name="sender" id="sender" placeholder="Nhập họ và tên" required></td>
+            </tr>
+            <tr>
+                <td>* Điện thoại</td>
+                <td><input type="tel" name="telephonenumber" id="telephonenumber" placeholder="Nhập điện thoại"
+                        required>
+                </td>
+            </tr>
+            <tr>
+                <td>* Địa chỉ</td>
+                <td><input type="text" name="address" id="address" placeholder="Nhập địa chỉ" required>
+                </td>
+            </tr>
+            <tr>
+                <td>* Tỉnh/TP</td>
+                <td>
+                    <select name="" id="">
+                        <option value="Hà Nội">Hà Nội</option>
+                        <option value="TPHCM">TP.HCM Nội Thành</option>
+                        <option value="Huế">Huế</option>
+                        <option value="Đà Nẵng">Đà Nẵng</option>
+                        <option value="Quảng Ninh">Quảng Ninh</option>
+                        <option value="Cần Thơ">Cần Thơ</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>* Quận</td>
+                <td>
+                    <select name="" id="">
+                        <option value="Q1">Quận 1</option>
+                        <option value="Q2">Quận 2</option>
+                        <option value="Q3">Quận 3</option>
+                        <option value="Quận Tân Phú">Quận Tân Phú</option>
+                        <option value="Quận Tân Bình">Quận Tân Bình</option>
+                        <option value="Quận Thủ Đức">Quận Thủ Đức</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" style="background-color: grey; display: block; margin: auto; width: 120px; height: 30px;"> GỬI THÔNG TIN</button>
+    </form>
+</body>
+
+</html>

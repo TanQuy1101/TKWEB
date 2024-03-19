@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- Thẻ Chèn Background cho web bằng picture --- background-image: url(đường dẫn);  -->
+    <!-- Dấu TAB --- &nbsp; -->
+    <form action="" method="get" enctype="multipart/form-data">
+        <!-- Thẻ Tên -->
+        <!-- <input type="text" name="name" id="name" value="User"> value="...." default chữ User trước tên -->
+        <!-- <input type="text" name="name" id="name" placeholder="username">  placeholder="....." gợi ý nội dung cần nhập trong khung Name -->
+        <!-- <input type="text" name="name" id="name" required> required yêu cầu phải nhập nội dung trc khi submit -->
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+
+        <!-- Thẻ Email -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <!-- Thẻ Tuổi -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="number" id="number" min="1" max="120">
+        </div>
+
+        <!-- Thẻ Date -->
+        <div>
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="2004-01-11">
+            <!-- min là năm-tháng-ngày -->
+        </div>
+        <br>
+
+        <!-- Thẻ CheckBox -->
+        <div>
+            Favorite Sports
+            <div>
+                <label for="Running">Running</label>
+                <input type="checkbox" name="Running" id="Running">
+            </div>
+            <div>
+                <label for="Hiking">Hiking</label>
+                <input type="checkbox" name="Hiking" id="Hiking">
+            </div>
+        </div>
+        <br>
+
+        <!-- Thẻ Checkbox nhưng chỉ dc chọn một trong hai option -->
+        <div>
+            Gender
+            <div>
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Male" value="Male">
+            </div>
+            <div>
+                <label for="Female">Female</label>
+                <input type="radio" name="gender" id="Female" value="Female">
+            </div>
+        </div>
+        <br>
+        <!-- Thẻ Option -->
+        <div>
+            <label for="Eye Color">Eye Color</label>
+            <!-- <select name="Eye Color" id="Eye Color" multiple> Có Thể Chọn Nhiều Option -->
+            <select name="Eye Color" id="Eye Color">
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="Purple">Purple</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- Thẻ ghi nội dung -->
+        <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            <!-- <textarea name="bio" id="bio" cols="30" rows="10">Có Thể Ghi Nội Dung Ở Đây Hoặc Trong Form Đều Được</textarea> -->
+        </div>
+        <br>
+
+        <!-- Thẻ Chọn File -->
+        <!-- enctype="multipart/form-data" Thêm Dòng Này Để Chọn Đc File Từ Đa Dạng Nguồn -->
+        <div>
+            <label for="file">File</label>
+            <input type="file" name="file">
+        </div>
+        <br>
+
+        <!-- Thẻ Số Điện Thoại -->
+        <div>
+            <label for="phone">Telephone Number</label>
+            <input type="tel" name="phone" id="phone">
+        </div>
+        <br>
+
+        <!-- Thẻ URL -->
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url">
+        </div>
+        <br>
+
+        <!-- Thẻ Color -->
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+        </div>
+        <br>
+
+        <!-- Thẻ Password -->
+        <div>
+            <label for="Password">Password</label>
+            <input type="password" name="Password" required>
+        </div>
+        <br>
+
+        <!-- Nút Bấm -->
+        <!-- type="submit" để nhấn dc Enter vào submit -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <!-- display : flex ; flex-direction: column -->
+    </form>
+</body>
+
+</html>

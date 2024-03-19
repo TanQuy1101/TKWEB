@@ -1,0 +1,18 @@
+.change1 {
+    text-align: center;
+    font-weight: bold;
+    background-color: aqua;
+}
+
+.change2 {
+    background-color: aqua;
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+}
+
+.change3 { 
+    margin: 1em;
+    text-align: center;
+
+}

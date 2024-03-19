@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revise</title>
+</head>
+
+<body>
+    <!-- Layout  -->
+    <canvas id="myCanvas" width="200" height="100"
+        style="border: 2px solid red; border-radius: 10px; background-color: orange;"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Type 1 : Draw A Straight Line
+        ctx.lineWidth = 2; // Độ Dày Của Straight Line
+        ctx.strokeStyle = "purple"; // Màu Của Straight Line
+        ctx.beginPath(); // Start To Draw
+        ctx.moveTo(50, 20); // Start Point
+        ctx.lineTo(180, 90); // Finish Point
+        ctx.stroke(); // Lệnh Nhận
+
+        // Type 2 : Draw A Circle
+        ctx.beginPath();
+        ctx.strokeStyle = "yellow";
+        ctx.lineWidth = 3;
+        ctx.arc(100, 50, 45, 0, 2 * Math.PI);  // trục x, trục y, tâm hình tròn, start point, finish point
+        // Circle: 0pi, 1/2pi, pi, 3/2pi, 2pi
+        ctx.stroke();
+
+        // Type 3 : Draw Words
+        // Custom : font-size, font-family
+        ctx.font = "20px Arial";
+        // 1. Type Text : Normal
+        ctx.fillText("Edward Duong", 30, 50); // Content, trục x, trục y
+        // 2. Type Text : Border
+        ctx.strokeStyle = "black";
+        ctx.strokeText("Edward D", 20, 80);
+
+        // Type 4 : Gradient (color)
+
+
+    </script>
+</body>
+
+</html>

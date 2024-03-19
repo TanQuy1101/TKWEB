@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+    background-color: #fcc;
+
+    p {
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+}
+
+h1 {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.content {
+    display: flex;
+
+    .left {
+        background-color: gray;
+        width: 33%;
+        display: flex;
+    }
+
+    .mid {
+        background-color: darkgray;
+        width: 34%;
+        display: flex;
+    }
+
+    .right {
+        background-color: lightgray;
+        width: 33%;
+        display: flex;
+    }
+}
+
+p {
+    text-align: left;
+
+}
+
+h2 {
+    padding-left: 0.5em;
+}
+
+.img1 {
+    width: 400px;
+    height: 400px;
+    padding-top: 1em;
+}
+
+.img2 {
+    width: 400px;
+    height: 400px;
+    padding-top: 1em;
+}
+
+.img3 {
+    width: 400px;
+    height: 400px;
+    padding-top: 1em;
+}

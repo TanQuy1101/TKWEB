@@ -1,0 +1,65 @@
+table,
+tr,
+td {
+    border: 1.5px solid black;
+    margin: auto;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.change2 {
+    background-color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+}
+
+th {
+    width: 150px;
+    height: 40px;
+}
+
+td {
+    width: 150px;
+    height: 40px;
+    text-align: right;
+    padding-right: 1em;
+}
+
+.change {
+    margin: auto;
+    display: block;
+    padding-left: 10em;
+
+}
+
+#birth {
+    margin: auto;
+    display: block;
+    padding-left: 14em;
+}
+
+#picture {
+    margin: 0 auto;
+    display: block;
+
+}
+
+.change3 {
+    height: 60px;
+    width: 100px;
+}
+
+.change6 {
+    text-align: center;
+    background-color: blue;
+}
+
+.change7 {
+    text-align: center;
+    font-weight: bold;
+    background-color: cadetblue;
+}
+
+.change8 {
+    text-align: center;
+}

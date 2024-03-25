@@ -1,0 +1,52 @@
+Buổi 05
+----------------------------------------------------------------------------------------------------------------
+1. Bố Cục + Tạo Khu Vực Để Vẽ Canvas
+
+<canvas id="myCanvas" width="200" height="100" style="border: 2px solid black;"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+       // Vẽ tất cả trong khu vực này.
+    </script>
+----------------------------------------------------------------------------------------------------------------
+2. Vẽ Đường Thẳng/Ngang/Chéo
+
+    ctx.lineWidth = "5";  // Độ Dày Viền
+    ctx.strokeStyle = "blue"; // Màu Viền
+
+    ctx.moveTo(x,y);
+    ctx.lineTo(x,y);
+    ctx.stroke();
+----------------------------------------------------------------------------------------------------------------
+3. Vẽ Hình Tròn
+
+    ctx.lineWidth = "5";  // Độ Dày Viền
+    ctx.strokeStyle = "blue"; // Màu Viền
+    
+    ctx.beginPath();
+    ctx.arc(100,100,70,0,2*Math.PI); // trục x, trục y, tâm hình tròn, điểm bắt đầu, điểm kết thúc.
+    ctx.stroke();
+----------------------------------------------------------------------------------------------------------------    
+4. Vẽ chữ
+    
+    ctx.fillStyle = "blue";  // Màu Chữ
+    ctx.font = "40px Arial";  // Cỡ Chữ, Font Chữ 
+    
+    ctx.fillText("11DHBM123",50,70); // Kiểu thứ nhất - "Nội Dung chữ",trục x, trục y.
+    ctx.strokeText("11DHBM123",50,140);  // Kiểu thứ hai - "Nội Dung chữ",trục x, trục y.
+---------------------------------------------------------------------------------------------------------------- 
+5. Vẽ màu theo phương thẳng đứng - default (top to bottom)
+
+#gradient {
+  height: 200px;
+  background-image: linear-gradient(red, yellow);
+}
+---------------------------------------------------------------------------------------------------------------- 
+6. Vẽ màu từ trái sáng phải hoặc ngược lại
+
+#gradient {
+  height: 200px;
+  background-image: linear-gradient(to right/left, red , yellow);
+}
+background-image: linear-gradient(to bottom right, red, yellow); // starts red at top left, to yellow at bottom right.
+---------------------------------------------------------------------------------------------------------------- 

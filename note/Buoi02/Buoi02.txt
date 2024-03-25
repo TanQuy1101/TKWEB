@@ -1,0 +1,46 @@
+Buổi 02 
+
+CSS
+
+table,th,td {
+    border: 2px solid red;  // Tạo đường viền, độ dày viền, màu viền.
+    border-collapse: collapse; // Tạo table dạng bình thường.
+    border-collapse: separate; // Tạo table mà từng phần nội dung phân chia với nhau thành từng ô.
+}
+
+table {
+    background-color: aquamarine; // Màu table, muốn chỉnh màu từng dòng/cột thì để bg-color ở vị trí muốn chỉnh.
+    width: 100%;
+    height: 200px;
+    margin: auto;
+}
+* Nếu sử dụng border-collapse: separate; - thì sử dụng border-spacing: 10px; để phân chia khoảng cách giữa từng ô.
+
+th,td {
+    padding-top: 10px;    // Căn lề text so với từng dòng và cột.
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+    text-align: center;
+}
+
+HTML
+
+<tr> : dòng
+
+<td> : cột
+
+<th> : cột ghi tiêu đề 
+
+Ứng với mỗi <tr> sẽ có tổng cộng số <td> tương ứng của bài
+
+4 dòng 5 cột : Sẽ có 4 <tr> và mỗi <tr> sẽ có 5 <td>  (Cột ghi tiêu đề thì dùng <th>.)
+
+* Nên Làm Từng Dòng.
+
+Rowspan="…" Xóa Dòng - Ghép Dòng
+
+Colspan="…" Xóa Cột - Ghép Cột
+
+
+

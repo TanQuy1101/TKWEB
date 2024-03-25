@@ -1,0 +1,23 @@
+Buổi 06
+--------------------------------------------------------------------------------------------------------
+1. CSS inline : Định Dạng Trong body
+--------------------------------------------------------------------------------------------------------
+2. CSS internal : Định Dạng Trong head
+--------------------------------------------------------------------------------------------------------
+3. CSS external : Định Dạng Trong css
+--------------------------------------------------------------------------------------------------------
+4. Một Số Thuộc Tính :
+
+    text-indent: 50px;    Khoảng cách thụt vào của dòng đầu tiên.
+    line-height: 30px;    Khoảng cách giữa các dòng.
+    padding: 20px;        Giúp căn đều các dòng với nhau.  
+    text-align: justify;  Giúp khoảng cách từ dòng thứ hai trở đi được căn đều so với lề trái.
+--------------------------------------------------------------------------------------------------------
+5. Chia Bố Cục : 
+
+- Nhớ Tạo class container Để Chứa.
+
+- Tạo Class Cha (content) Chứa Các Thuộc Tính Con + display : flex;
+
+- Tạo Các Thuộc Tính Con (content1,2,3) Chứa Trong Cha + display : flex;
+--------------------------------------------------------------------------------------------------------

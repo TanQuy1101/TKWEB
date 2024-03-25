@@ -1,0 +1,110 @@
+Buổi 03
+---------------------------------------------------------------------------------------------------------------------------
+1. Thẻ chèn audio : 
+
+<audio controls>
+  <source src="Link Audio">
+</audio>
+
+---------------------------------------------------------------------------------------------------------------------------
+2. Thẻ chèn video : 
+
+<video controls width="600" >
+  <source src="Link Video">
+</video>
+
+---------------------------------------------------------------------------------------------------------------------------
+3. Thẻ Object :
+
+1. Dùng Object để chèn hình ảnh : <object data="Link Hình Ảnh.jpg" width="500" height="200"> </object>
+
+2. Dùng Object để chèn Video : <object data="Link Video.mp4" width="500" height="200"> </object>
+
+3. Dùng Object để gắn trang html : <object data="Link Trang.html" width="500" height="200"> </object>
+
+---------------------------------------------------------------------------------------------------------------------------
+4. Thẻ Embed : tương tự Thẻ Object, khác mỗi syntax
+
+1. Dùng Embed để chèn hình ảnh : <embed type="image/jpg" src="Link Hình Ảnh.jpg" width="500" height="200">
+
+2. Dùng Embed để chèn Video : <embed type="video/webm" src="Link Video.mp4" width="500" height="200">
+
+3. Dùng Embed để gắn trang html : <embed type="text/html" src="Link Trang.html" width="500" height="200">
+
+---------------------------------------------------------------------------------------------------------------------------
+5. Thẻ chèn và dẫn đến một trang web khác : <iframe> </iframe>
+
+<iframe src="Link Muốn Nhúng" width="500px" height="200px" frameborder="0"></iframe>
+
+frameborder="0" : Bỏ cái viền của đường link lúc hiển thị.
+
+Muốn bỏ thanh cuộn thì : scrolling="no" 
+---------------------------------------------------------------------------------------------------------------------------
+6. Thẻ Grid :
+
+CSS
+
+.item1 {
+    grid-area: A;
+}
+
+.item2 {
+    grid-area: B;
+}
+
+.item3 {
+    grid-area: C;
+}
+
+.item4 {
+    grid-area: D;
+}
+
+.item5 {
+    grid-area: E;
+}
+
+.item6 {
+    grid-area: F;
+}
+
+.item7 {
+    grid-area: G;
+}
+// Bao Nhiêu Ô Tương Ứng Với Bấy Nhiêu item.
+
+.grid-container {
+    display: grid;
+    border: 10px solid blue;
+    width: 50%;
+    background-color: green;
+
+    grid-template-areas:
+        'A B B'
+        'A C C'
+        'D D F'
+        'E E F'
+        'G G G';
+
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-container>div {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+HTML 
+<div class="grid-container">
+    <div class="item1">A</div>
+    <div class="item2">B</div>
+    <div class="item3">C</div>
+    <div class="item4">D</div>
+    <div class="item5">E</div>
+    <div class="item6">F</div>
+    <div class="item7">G</div>
+</div>
+// Bao nhiêu item thì bấy nhiêu cái <div>.

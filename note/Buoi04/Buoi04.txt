@@ -1,0 +1,110 @@
+Buổi 04 
+-------------------------------------------------------------------------------------------------------------------
+1. Thẻ tạo Form: <form></form>
+-------------------------------------------------------------------------------------------------------------------
+2. Thẻ Tên : type="text"
+    <div>
+        <label for="name"> Name </label>
+        <input type="text" name="name" id="name" value="User" placeholder="username" required> 
+    </div> 
+
+value="...." default chữ User trước tên.
+placeholder="....." gợi ý nội dung cần nhập trong khung Name.
+required yêu cầu phải nhập nội dung trc khi submit.
+-------------------------------------------------------------------------------------------------------------------
+3. Thẻ Tuổi : type="number"
+    <div>
+        <label for="age"> Age </label>
+        <input type="number" name="number" id="number" min="1" max="120">
+    </div>
+-------------------------------------------------------------------------------------------------------------------
+4. Thẻ Email : type="email"
+    <div>
+        <label for="email"> Email </label>
+        <input type="email" name="email" id="email" required>
+    </div>    
+-------------------------------------------------------------------------------------------------------------------    
+5. Thẻ Date : type="date"
+    <div>
+        <label for="date"> Birthdate </label>
+        <input type="date" name="date" id="date" min="2004-01-11">  // Min là năm-tháng-ngày.
+    </div>
+-------------------------------------------------------------------------------------------------------------------
+6. Thẻ CheckBox : type="checkbox"
+    <div>
+        Favorite Sports
+            <div>
+                <label for="Running"> Running </label>
+                <input type="checkbox" name="Running" id="Running">
+            </div>
+            <div>
+                <label for="Hiking"> Hiking </label>
+                <input type="checkbox" name="Hiking" id="Hiking">
+            </div>
+    </div>
+-------------------------------------------------------------------------------------------------------------------
+7. Thẻ Checkbox nhưng chỉ dc chọn một trong hai option : type="radio"
+    <div>
+        Gender
+            <div>
+                <label for="Male"> Male </label>
+                <input type="radio" name="gender" id="Male" value="Male">
+            </div>
+            <div>
+                <label for="Female"> Female </label>
+                <input type="radio" name="gender" id="Female" value="Female">
+            </div>
+    </div>
+-------------------------------------------------------------------------------------------------------------------
+8. Thẻ Option :
+    <div>
+        <label for="Eye Color"> Eye Color </label>
+        <select name="Eye Color" id="Eye Color">  // Thêm (multiple) Để Có Thể Chọn Nhiều Option. 
+            <option value="Blue"> Blue </option>
+            <option value="Black"> Black </option>
+            <option value="Purple"> Purple </option>
+        </select>
+    </div>
+-------------------------------------------------------------------------------------------------------------------
+9. Thẻ ghi nội dung : <textarea></textarea>
+    <div>
+        <label for="bio"> Bio </label>
+        <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        ** <textarea name="bio" id="bio" cols="30" rows="10"> Có Thể Ghi Nội Dung Ở Đây Hoặc Trong Form Đều Được. </textarea> 
+    </div>    
+-------------------------------------------------------------------------------------------------------------------
+10. Thẻ chọn file : type="file"
+    <div>
+        <label for="file"> File </label>
+        <input type="file" name="file" id="file" enctype="multipart/form-data"> // enctype="multipart/form-data" : Chọn File Từ Đa Dạng Nguồn.
+    </div>
+-------------------------------------------------------------------------------------------------------------------
+11. Thẻ Số Điện Thoại : type="tel"
+    <div>
+        <label for="phone"> Telephone Number </label>
+        <input type="tel" name="phone" id="phone">
+    </div>
+-------------------------------------------------------------------------------------------------------------------       
+12. Thẻ URL : type="url"
+    <div>
+        <label for="url"> URL </label>
+        <input type="url" name="url" id="url">
+    </div>
+-------------------------------------------------------------------------------------------------------------------        
+13. Thẻ Color : type="color"
+    <div>
+        <label for="color"> Color </label>
+        <input type="color" name="color" id="color">
+    </div>
+-------------------------------------------------------------------------------------------------------------------      
+14. Thẻ Password : type="password"
+    <div>
+        <label for="Password"> Password </label>
+        <input type="password" name="Password" id="Password" required>
+    </div>    
+-------------------------------------------------------------------------------------------------------------------    
+15. Tạo Nút Bấm :
+   
+    <button type="reset"> Reset </button>
+    <button type="submit"> Submit </button>
+-------------------------------------------------------------------------------------------------------------------     

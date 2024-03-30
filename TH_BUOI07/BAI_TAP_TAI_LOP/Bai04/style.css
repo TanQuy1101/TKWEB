@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+
+    .container1 {
+        display: flex;
+        width: 33%;
+    }
+
+    .container2 {
+        display: flex;
+        width: 33%;
+    }
+
+    .container3 {
+        display: flex;
+        width: 33%;
+    }
+}
+
+.img1 {
+    width: 430px;
+    height: 400px;
+    padding-top: 1em;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.img1:hover {
+    opacity: 1;
+}
+
+.img2 {
+    width: 420px;
+    height: 400px;
+    padding-top: 1em;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.img2:hover {
+    opacity: 1;
+}
+
+.img3 {
+    width: 450px;
+    height: 400px;
+    padding-top: 1em;
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.img3:hover {
+    opacity: 1;
+}

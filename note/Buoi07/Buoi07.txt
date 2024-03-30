@@ -1,0 +1,40 @@
+1. 
+<span> element which is used to color a part of a text.
+
+<p> My mother has <span style="color:blue; font-weight:bold"> blue </span> eyes.
+
+----------------------------------------------------------------------------------------------------
+2.
+Display: none; Display: block; Display: inline; Display: inline-block;
+
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_display
+
+----------------------------------------------------------------------------------------------------
+3.
+visibility: visible;
+visibility: hidden;
+
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_visibility
+
+----------------------------------------------------------------------------------------------------
+4.
+Text-shadow : tạo bóng đổ cho text
+
+text-shadow: 0 0 6px green;
+text-shadow: 0 0 6px green, 0 0 8px red;
+
+https://www.w3schools.com/cssref/tryit.php?filename=trycss3_text-shadow
+
+Box-shadow: tạo bóng đổ cho element
+
+box-shadow: 10px 10px 5px grey;
+
+https://www.w3schools.com/cssref/tryit.php?filename=trycss3_box-shadow
+
+----------------------------------------------------------------------------------------------------
+5. 
+Làm Màu Trong Suốt
+
+https://websitehcm.com/mau-trong-suot-css/
+
+----------------------------------------------------------------------------------------------------

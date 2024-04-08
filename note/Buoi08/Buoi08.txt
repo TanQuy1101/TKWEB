@@ -1,0 +1,47 @@
+1. visited, hover, active
+
+// Màu hiển thị của đường link
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+// Màu khi đưa chuột vào link
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+// Màu khi nhấp vào link
+/* selected link */
+a:active {
+  color: yellow;
+} 
+
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_sel_link_more1
+
+------------------------------------------------------------------------------------------------------------------
+2. list-style: ;   // Chỉnh kiểu cho list.
+
+------------------------------------------------------------------------------------------------------------------
+3. text-transform: ;  // Chỉnh kiểu chữ.
+
+text-transform: uppercase;
+LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.
+
+text-transform: lowercase;
+lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+text-transform: capitalize;
+Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit.
+
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_text-transform
+
+------------------------------------------------------------------------------------------------------------------
+4. text-decoration: ;
+
+https://www.w3schools.com/cssref/tryit.php?filename=trycss_text-decoration
+
+------------------------------------------------------------------------------------------------------------------
+
+

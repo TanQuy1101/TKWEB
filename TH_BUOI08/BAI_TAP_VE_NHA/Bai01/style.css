@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Chỉnh center cho container */
+
+  .item {
+    display: flex;
+    flex-direction: column; /* Có dòng này mới ghi đc description cho từng ảnh */
+    gap: 10px;
+  }
+}
+/* Tạo Ra Dòng Số Hai */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  margin: 0.1em;
+}
+
+h3 {
+  text-align: center;
+}
+
+h2 {
+  color: orange;
+  text-align: center;
+  line-height: 0.5;
+}
+
+.giohang {
+  border: 0.25px solid gray;
+  border-radius: 5px;
+  background-color: #fff;
+  align-items: center;  /* Cho icon or img nằm giữa cái border */
+  justify-content: center;  /* Cho icon + text nằm giữa cái border */
+  display: flex;
+  width: 180px;  /* border */
+  height: 50px;  /* border */
+  padding-right: 1em;
+  margin-left: 4em;
+  margin-top: 0.5em;
+}
+
+
+
+

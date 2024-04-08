@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Ô chứa */
+.container {
+  display: block;
+  height: 50%;
+  padding-left: 5em;
+  padding-top: 5em;
+
+  /* Từng ô nhỏ */
+  .item {
+    width: 150px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    border-bottom: 3px solid #fff;
+    position: relative; /* Để Cho Các Item Của SubMenu Nằm Ở Đúng Vị Trí */
+  }
+}
+
+.item:hover {
+  background-color: #454545;
+}
+
+p {
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+.submenu {
+  display: none;
+  position: absolute; /* Để Cho Các Item Của SubMenu Nằm Ở Đúng Vị Trí */
+  left: 150px;
+  top: 0;
+ 
+  /* Từng ô nhỏ của SubMenu*/
+  .item {
+    width: 150px;
+    background: #808080;
+    height: 50px;
+    border-bottom: 3px solid #fff;
+  }
+}
+.item:hover > .submenu {
+  display: block;
+}
+
+.item1 {
+  width: 150px;
+  background-color: black;
+  height: 180px;
+  border-bottom: 3px solid #fff;
+}

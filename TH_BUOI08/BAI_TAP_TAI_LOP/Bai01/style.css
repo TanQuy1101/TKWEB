@@ -1,0 +1,78 @@
+.container {
+    display: flex;
+
+    .container1 {
+        display: flex;
+        border: 1px solid;
+        height: 50px;
+        width: 150px;
+        background-color: blue;
+        padding: 10px 20px;
+        margin: 2px;   /* Tạo khoảng cách giữa các menu */
+    }
+
+    .container1:hover {
+        background-color: orangered;
+    }
+
+    .container2 {
+        display: flex;
+        border: 1px solid;
+        height: 50px;
+        width: 150px;
+        background-color: blue;
+        padding: 10px 20px;
+        margin: 2px;  /* Tạo khoảng cách giữa các menu */
+    }
+
+    .container2:hover {
+        background-color: orangered;
+    }
+
+    .container3 {
+        display: flex;
+        border: 1px solid blue;
+        height: 50px;
+        width: 150px;
+        background-color: blue;
+        padding: 10px 20px;
+        margin: 2px;  /* Tạo khoảng cách giữa các menu */
+    }
+
+    .container3:hover {
+        background-color: orangered;
+    }
+
+    .container4 {
+        display: flex;
+        border: 1px solid blue;
+        height: 50px;
+        width: 150px;
+        background-color: blue;
+        padding: 10px 20px;
+        margin: 2px;  /* Tạo khoảng cách giữa các menu */
+    }
+
+    .container4:hover {
+        background-color: orangered;
+    }
+
+    .container5 {
+        display: flex;
+        border: 1px solid blue;
+        height: 50px;
+        width: 150px;
+        background-color: blue;
+        padding: 10px 20px;
+        margin: 2px;  /* Tạo khoảng cách giữa các menu */
+    }
+
+    .container5:hover {
+        background-color: orangered;
+    }
+}
+
+p {
+    text-align: center;
+    color: white;
+}

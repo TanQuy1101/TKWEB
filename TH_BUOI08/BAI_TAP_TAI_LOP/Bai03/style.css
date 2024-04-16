@@ -1,40 +1,48 @@
 .container {
   display: flex;
-  width: 90%;
+  width: 100%;
 
   .item {
     display: flex;
-    width: 90%;
-    margin-top: 20px;
+    width: 100%;
+    position: relative;
+
     margin-left: auto;
     margin-right: auto;
     background-color: #00f;
     color: #fff;
     height: 30px;
     text-transform: uppercase;
-    margin: 1px;
-    padding: 6px 10px;
+    
   }
 
   .item:hover {
     background-color: #0cf;
   }
-} 
+}
 
-p {
-  padding-left: 0.5em;
-  padding-bottom: 1em;
+.container > .item{
+  justify-content: center;
+  align-items: center;
 }
 
 .submenu {
   display: none;
   position: absolute;
-  padding-top: 2.28em;
+  top: 30px;
+  left: 0;
 
   .item {
     width: 200px;
     background-color: #90f;
     text-transform: capitalize;
+    justify-content: left;
+    align-items: center;
+
+    .submenu {
+      top: 0;
+      left: 200px;
+    }
   }
 }
 .item:hover > .submenu {

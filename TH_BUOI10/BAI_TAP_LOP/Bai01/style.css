@@ -1,0 +1,44 @@
+.red {
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+
+  /* THIẾT LẬP THỨ TỰ XẾP CHỒNG CHO BLOCK (z-index: CAO HƠN SẼ NẰM TRÊN) */
+  position: relative;
+  z-index: 3;
+}
+
+.green {
+  margin-left: 90px;
+  margin-top: -40px;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+
+  /* THIẾT LẬP THỨ TỰ XẾP CHỒNG CHO BLOCK (z-index: CAO HƠN SẼ NẰM TRÊN) */
+  position: relative;
+  z-index: 2;
+}
+
+.blue {
+  margin-left: 130px;
+  margin-top: -40px;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+
+  /* THIẾT LẬP THỨ TỰ XẾP CHỒNG CHO BLOCK (z-index: CAO HƠN SẼ NẰM TRÊN) */
+  position: relative;
+  z-index: 1;
+}

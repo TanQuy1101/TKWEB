@@ -1,0 +1,39 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto; /* BAO NHIÊU CỘT BẤY NHIÊU auto */
+  grid-gap: 10px; /* KHOẢNG CÁCH GIỮA CÁC GRID */
+  background-color: #2196f3;
+  padding: 10px; /* KHOẢNG CÁCH GIỮA TEXT VÀ GRID*/
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.header {
+  grid-column: 1 / span 10;
+  grid-row: 1;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: 2 / span 2;
+}
+
+.main {
+  grid-column: 2 / span 6;
+  grid-row: 2;
+}
+
+.right {
+  grid-column: 8 / span 3;
+  grid-row: 2;
+}
+
+.footer {
+  grid-column: 2 / span 9;
+  grid-row: 3;
+}

@@ -1,0 +1,56 @@
+#main {
+  width: 1000px;
+  padding: 0; /* Căn Giữa Cho main */
+  margin-left: auto; /* Căn Giữa Cho main */
+  margin-right: auto; /* Căn Giữa Cho main */
+}
+
+#head {
+  border: 1px solid #cdcdcd;
+  background-color: #f5f5f5;
+  height: 100px;
+  margin-bottom: 5px;   /* Tạo RA KHOẢNG TRỐNG GIỮA CÁC LAYOUT */
+}
+
+#head-link {
+  border: 1px solid #cdcdcd;
+  background-color: #f5f5f5;
+  height: 30px;
+  margin-bottom: 5px;   /* Tạo RA KHOẢNG TRỐNG GIỮA CÁC LAYOUT */
+}
+
+#left {
+  float: left;
+  border: 1px solid #cdcdcd;
+  background-color: #0ff;
+  width: 150px;
+  min-height: 400px;
+  margin-bottom: 5px;   /* Tạo RA KHOẢNG TRỐNG GIỮA CÁC LAYOUT */
+}
+
+#content {
+  float: left;
+  border: 1px solid #cdcdcd;
+  width: 600px;
+  background-color: #f5f5f5;
+  min-height: 400px;
+  margin-bottom: 5px;   /* Tạo RA KHOẢNG TRỐNG GIỮA CÁC LAYOUT */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#right {
+  float: right;
+  border: 1px solid #cdcdcd;
+  width: 234px;
+  background-color: #b6ff00;
+  min-height: 400px;
+  margin-bottom: 5px;   /* Tạo RA KHOẢNG TRỐNG GIỮA CÁC LAYOUT */
+}
+
+#footer {
+  clear: both;
+  border: 1px solid #cdcdcd;
+  height: 50px;
+  background-color: #cdcdcd;
+}

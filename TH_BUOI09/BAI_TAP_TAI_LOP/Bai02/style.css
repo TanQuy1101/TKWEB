@@ -1,0 +1,45 @@
+#container {
+  width: 900px;
+}
+
+#header {
+  border: 5px solid purple;
+  height: 250px;
+  margin-bottom: 15px;
+  width: 900px;
+  clear: both;
+}
+
+#left {
+  float: left;
+  border: 5px solid blue;
+  height: 500px;
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+#content {
+  float: left;
+  border: 5px solid red;
+  height: 500px;
+  margin-bottom: 15px;
+  width: 400px;
+  margin-left: 15px;
+}
+
+#right {
+  float: right;
+  border: 5px solid yellow;
+  height: 500px;
+  width: 224px;
+  margin-bottom: 15px;
+  margin-right: 70.5em;
+}
+
+#footer {
+  clear: both;
+  border: 5px solid green;
+  margin-bottom: 15px;
+  height: 60px;
+  width: 900px;
+}
